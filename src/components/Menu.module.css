@@ -1,0 +1,22 @@
+.itemBox{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    height: fit-content;
+    padding: 1em;
+    background-color: #FCDEC0;
+    margin: 1em;
+    border-radius: 10px;
+}
+
+.itemDeets{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+img{
+    width: 6em;
+}

@@ -1,0 +1,17 @@
+.forSale {
+  text-align: center;
+  background-color: #E5B299;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding:1rem;
+  border-radius: 20px;
+  margin: 2em;
+  min-width: 90%;
+}
+
+.remove:hover{
+  background-color: rgb(146, 82, 82);
+}

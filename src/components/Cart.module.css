@@ -1,0 +1,33 @@
+.itemBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 1em;
+    background-color: #E5B299;
+    margin: 1em;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 50%;
+    overflow: auto;
+}
+
+button{
+    max-width: fit-content;
+    border-radius: 10px;
+}
+
+button:active {
+    background-color:green;
+    transform: scale(1.05);
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.remove:hover{
+    background-color: red;
+}

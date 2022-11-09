@@ -10,6 +10,7 @@ import { Routes, Route } from "react-router";
 import Menu from "./components/Menu";
 import ItemDetails from "./components/ItemDetails";
 import axios from "axios";
+import LoadingDisplay from "./components/LoadingDisplay";
 
 function App() {
   const initialState = {
@@ -279,6 +280,7 @@ function App() {
           <Link to="/modifyitems" className={styles.tab3}>
             Modify Items
           </Link>
+          
         </nav>
         <div className={styles.main}>
           <Routes>
@@ -287,7 +289,7 @@ function App() {
               path="/"
               element={
                 state.forSaleItems.length === 0 ? (
-                  <div className={styles.menu}>"no item for sale"</div>
+                  <LoadingDisplay/>
                 ) : (
                   <>
                     <div className={styles.category}>
@@ -316,9 +318,10 @@ function App() {
               path="cart"
               element={
                 state.cartItems.length === 0 ? (
-                  <div className={styles.cart}>
-                    <strong>no items add to cart now</strong>
-                  </div>
+                  // <div className={styles.cart}>
+                  //   <strong>no items add to cart now</strong>
+                  // </div>
+                  <LoadingDisplay/>
                 ) : (
                   <>
                     <div className={styles.cart}>
